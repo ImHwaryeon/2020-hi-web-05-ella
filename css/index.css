@@ -12,7 +12,6 @@ body {
 }
 
 .wrapper {
-	position: relative;
 	max-width: 1200px;
 	margin: auto;
 }
@@ -52,9 +51,30 @@ a:hover {
 	transform-origin: right;
 }
 
+.bold {
+	font-weight: bold;
+}
+
+.bold:hover {
+	color: #ba7a2d;
+}
 
 /************* .header-wrapper ************/
-.header-wrapper {}
+.header-wrapper {
+	color: #333;
+}
+
+.header-wrapper .cart-cnt {
+	background-color: #ba7a2d;
+	color: #f9f9f9;
+	font-size: 0.7em;
+	position: absolute;
+	bottom: -0.25em;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 0.125em 0.25em;
+	border-radius: 0.25em;
+}
 
 .top-wrapper {
 	background-color: #293356;
@@ -233,17 +253,103 @@ a:hover {
 	color: #495464;
 }
 
-.logo-wrapper .cart-cnt {
-	background-color: #ba7a2d;
-	color: #f9f9f9;
-	font-size: 0.7em;
-	position: absolute;
-	bottom: -0.25em;
-	left: 50%;
-	transform: translateX(-50%);
-	padding: 0.125em 0.25em;
-	border-radius: 0.25em;
+
+/************* .navi-wrapper ************/
+.navi-wrapper {
+	border-top: 1px solid #eee;
 }
+
+.navi-wrapper>.wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.navi-wrapper>.wrapper>.navi {
+	padding: 1.5em;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+}
+
+.navi-wrapper>.wrapper>.navi:first-child {
+	padding-left: 0;
+}
+
+.navi-wrapper .a-search {
+	margin-left: auto;
+	margin-right: 0.25em;
+}
+
+.navi-wrapper a .fa {
+	font-size: 1.5em;
+}
+
+.navi-wrapper .navi a .fa {
+	font-size: 0.75em;
+}
+
+.navi-wrapper .line {
+	border-left: 1px solid #eee;
+	height: 1.5em;
+}
+
+.navi-wrapper a.bt-serach {
+	margin-right: 1.5em;
+}
+
+.navi-wrapper span.line {
+	margin-right: 1.5em;
+}
+
+.navi-wrapper a.bt-wishlist {
+	margin-right: 1.5em;
+}
+
+.sub-wrapper {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 4.5em;
+	border-top: 1px solid #eee;
+	background-color: #fff;
+	font-weight: normal;
+	letter-spacing: -0.05em;
+}
+
+.sub-navi-wrapper {
+	padding: 2.5em 0 1.5em 0;
+	display: flex;
+	align-items: flex-start;
+}
+
+.sub-navi-wrap {
+	flex: 0 0 18%;
+	margin-right: 2%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.sub-navi {
+	padding: 0.5em 0;
+}
+
+.sub-banner {
+	flex: 0 0 38%;
+	margin-left: auto;
+	margin-top: 0.5em;
+	overflow: hidden;
+}
+
+.sub-banner>img {
+	transition: all 0.75s;
+	opacity: 0.8;
+}
+
+.sub-banner:hover>img {
+	transform: scale(1.2);
+	opacity: 1;
+}
+
 
 
 
@@ -276,6 +382,9 @@ a:hover {
 		margin-left: unset;
 	}
 
+
+
+
 	.logo-wrapper .logo-wrap {
 		width: 50px;
 	}
@@ -290,6 +399,12 @@ a:hover {
 
 	.logo-wrapper .link-mo-wrap {
 		display: block;
+	}
+
+
+
+	.navi-wrapper {
+		display: none;
 	}
 }
 
