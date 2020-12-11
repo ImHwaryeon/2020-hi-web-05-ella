@@ -11,6 +11,11 @@ body {
 	line-height: 0.95;
 }
 
+.wrapper-mid {
+	max-width: 1300px;
+	margin: auto;
+}
+
 .wrapper {
 	max-width: 1200px;
 	margin: auto;
@@ -256,7 +261,7 @@ a:hover {
 
 /************* .navi-wrapper ************/
 .navi-wrapper {
-	border-top: 1px solid #eee;
+	border-top: 1px solid #eaeaea;
 }
 
 .navi-wrapper>.wrapper {
@@ -288,7 +293,7 @@ a:hover {
 }
 
 .navi-wrapper .line {
-	border-left: 1px solid #eee;
+	border-left: 1px solid #eaeaea;
 	height: 1.5em;
 }
 
@@ -307,9 +312,9 @@ a:hover {
 .sub-wrapper {
 	position: absolute;
 	width: 100%;
-	left: 0;
 	top: 4.5em;
-	border-top: 1px solid #eee;
+	left: 0;
+	border-top: 1px solid #eaeaea;
 	background-color: #fff;
 	font-weight: normal;
 	letter-spacing: -0.05em;
@@ -342,7 +347,7 @@ a:hover {
 
 .sub-banner>img {
 	transition: all 0.75s;
-	opacity: 0.8;
+	opacity: .8
 }
 
 .sub-banner:hover>img {
@@ -350,9 +355,29 @@ a:hover {
 	opacity: 1;
 }
 
+.slide-wrapper .wrapper-mid {
+}
 
+.slide-wrapper .wrapper {
+	border: 1px solid red;
+	height: 100px;
+}
 
+.slide-wrapper .bt-arrow {
+	font-size: 3em;
+	color: #293356;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
 
+.slide-wrapper .bt-prev {
+	left: 0;
+}
+
+.slide-wrapper .bt-next {
+	right: 0;
+}
 
 
 /************* 반응형 ************/
